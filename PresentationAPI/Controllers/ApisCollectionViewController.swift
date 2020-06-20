@@ -49,6 +49,23 @@ class ApisCollectionViewController: UICollectionViewController {
         }
     }
 
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier != "ShowImage" {
+            let moviesReviewVC = segue.destination as! MoviesReviewController
+            
+            switch segue.identifier {
+            case "ExampleOne":
+                moviesReviewVC.fetchDataV1()
+            default: break
+            }
+        }
+    }
+    
+    
+    
 }
 
 extension ApisCollectionViewController: UICollectionViewDelegateFlowLayout {

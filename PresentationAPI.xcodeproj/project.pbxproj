@@ -15,6 +15,9 @@
 		56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */; };
 		56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F74249DC2B800C78EC3 /* UserActionCell.swift */; };
 		56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F76249E0C8500C78EC3 /* ImageViewController.swift */; };
+		56C06F79249E2EC600C78EC3 /* MoviesReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F78249E2EC600C78EC3 /* MoviesReview.swift */; };
+		56C06F7B249E323100C78EC3 /* MoviesReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */; };
+		56C06F7D249E3D6500C78EC3 /* MovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApisCollectionViewController.swift; sourceTree = "<group>"; };
 		56C06F74249DC2B800C78EC3 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		56C06F76249E0C8500C78EC3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		56C06F78249E2EC600C78EC3 /* MoviesReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesReview.swift; sourceTree = "<group>"; };
+		56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesReviewController.swift; sourceTree = "<group>"; };
+		56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,7 @@
 				56C06F6D249DBBE300C78EC3 /* Controllers */,
 				56C06F70249DBC2F00C78EC3 /* Models */,
 				56C06F6C249DBBC700C78EC3 /* Storyboards */,
-				56C06F71249DBC3A00C78EC3 /* NetworkDataManager */,
+				56C06F71249DBC3A00C78EC3 /* NetworkManager */,
 				56C06F6E249DBC0400C78EC3 /* Supporting Files */,
 				56C06F6F249DBC1600C78EC3 /* Sources */,
 			);
@@ -85,6 +91,8 @@
 				56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */,
 				56C06F74249DC2B800C78EC3 /* UserActionCell.swift */,
 				56C06F76249E0C8500C78EC3 /* ImageViewController.swift */,
+				56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */,
+				56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,15 +118,16 @@
 		56C06F70249DBC2F00C78EC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56C06F78249E2EC600C78EC3 /* MoviesReview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		56C06F71249DBC3A00C78EC3 /* NetworkDataManager */ = {
+		56C06F71249DBC3A00C78EC3 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = NetworkDataManager;
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +203,10 @@
 			files = (
 				56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */,
 				56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */,
+				56C06F7D249E3D6500C78EC3 /* MovieReviewCell.swift in Sources */,
+				56C06F79249E2EC600C78EC3 /* MoviesReview.swift in Sources */,
 				56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */,
+				56C06F7B249E323100C78EC3 /* MoviesReviewController.swift in Sources */,
 				56C06F58249DBB9F00C78EC3 /* AppDelegate.swift in Sources */,
 				56C06F5A249DBB9F00C78EC3 /* SceneDelegate.swift in Sources */,
 			);
