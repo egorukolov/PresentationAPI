@@ -14,6 +14,7 @@
 		56C06F64249DBBA100C78EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C06F62249DBBA100C78EC3 /* LaunchScreen.storyboard */; };
 		56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */; };
 		56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F74249DC2B800C78EC3 /* UserActionCell.swift */; };
+		56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F76249E0C8500C78EC3 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		56C06F65249DBBA100C78EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApisCollectionViewController.swift; sourceTree = "<group>"; };
 		56C06F74249DC2B800C78EC3 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		56C06F76249E0C8500C78EC3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */,
 				56C06F74249DC2B800C78EC3 /* UserActionCell.swift */,
+				56C06F76249E0C8500C78EC3 /* ImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */,
 				56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */,
+				56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */,
 				56C06F58249DBB9F00C78EC3 /* AppDelegate.swift in Sources */,
 				56C06F5A249DBB9F00C78EC3 /* SceneDelegate.swift in Sources */,
 			);

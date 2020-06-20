@@ -70,21 +70,41 @@
             </objects>
             <point key="canvasLocation" x="907.24637681159425" y="164.73214285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="yrc-3T-GUh">
             <objects>
-                <viewController id="vLg-RM-2in" sceneMemberID="viewController">
+                <viewController id="vLg-RM-2in" customClass="ImageViewController" customModule="PresentationAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xp8-dp-x4r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="XBz-zo-6op">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lmV-ky-nfO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lmV-ky-nfO" firstAttribute="trailing" secondItem="mPR-3P-3yx" secondAttribute="trailing" id="8V4-ws-VaT"/>
+                            <constraint firstItem="XBz-zo-6op" firstAttribute="centerX" secondItem="xp8-dp-x4r" secondAttribute="centerX" id="Bpg-tP-n8i"/>
+                            <constraint firstItem="lmV-ky-nfO" firstAttribute="leading" secondItem="mPR-3P-3yx" secondAttribute="leading" id="JQZ-aW-pPD"/>
+                            <constraint firstItem="XBz-zo-6op" firstAttribute="centerY" secondItem="xp8-dp-x4r" secondAttribute="centerY" id="WI8-91-eRd"/>
+                            <constraint firstItem="lmV-ky-nfO" firstAttribute="top" secondItem="mPR-3P-3yx" secondAttribute="top" id="Z8x-Pz-5Ea"/>
+                            <constraint firstItem="lmV-ky-nfO" firstAttribute="bottom" secondItem="mPR-3P-3yx" secondAttribute="bottom" constant="34" id="qj4-g2-TRJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mPR-3P-3yx"/>
                     </view>
                     <navigationItem key="navigationItem" id="h8v-kW-285"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="XBz-zo-6op" id="h3r-nc-fdy"/>
+                        <outlet property="imageView" destination="lmV-ky-nfO" id="asC-xW-xxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPz-e3-Zwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="-126"/>
+            <point key="canvasLocation" x="1808.6956521739132" y="-126.5625"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Kk7-Ke-NSQ">
