@@ -11,11 +11,11 @@ import UIKit
 enum UserActions: String, CaseIterable {
     
     case downloadImage = "Download Image"
-    case exampleOne = "Api Example One"
+    case RickAndMorty = "Rick And Morty"
     case exampleTwo = "Api Example Two"
 }
 
-class ApisCollectionViewController: UICollectionViewController {
+class ImagesAndCharactersController: UICollectionViewController {
 
     let userActions = UserActions.allCases
     
@@ -42,8 +42,8 @@ class ApisCollectionViewController: UICollectionViewController {
         switch userAction {
         case .downloadImage:
             performSegue(withIdentifier: "ShowImage", sender: nil)
-        case .exampleOne:
-             performSegue(withIdentifier: "ExampleOne", sender: nil)
+        case .RickAndMorty:
+             performSegue(withIdentifier: "RickAndMorty", sender: nil)
         case .exampleTwo:
              performSegue(withIdentifier: "ExampleTwo", sender: nil)
         }
@@ -54,21 +54,19 @@ class ApisCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier != "ShowImage" {
-            let moviesReviewVC = segue.destination as! MoviesReviewController
+            let moviesReviewVC = segue.destination as! RickAndMortyController
             
             switch segue.identifier {
-            case "ExampleOne":
+            case "RickAndMorty":
                 moviesReviewVC.fetchDataV1()
             default: break
             }
         }
     }
-    
-    
-    
+   
 }
 
-extension ApisCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension ImagesAndCharactersController: UICollectionViewDelegateFlowLayout {
      
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)

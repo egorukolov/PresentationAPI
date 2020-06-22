@@ -28,6 +28,7 @@ class ImageViewController: UIViewController {
         guard let imageURL = URL(string: stringURL) else { return }
         
         URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
+            
             if let error = error { print(error); return }
             if let response = response { print(response) }
             

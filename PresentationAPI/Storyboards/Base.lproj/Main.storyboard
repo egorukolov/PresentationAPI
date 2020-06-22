@@ -11,7 +11,7 @@
         <!--Lesson №9-->
         <scene sceneID="2Nv-b1-1WD">
             <objects>
-                <collectionViewController id="mxY-H8-J3U" customClass="ApisCollectionViewController" customModule="PresentationAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="mxY-H8-J3U" customClass="ImagesAndCharactersController" customModule="PresentationAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="n2h-Ed-4MQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Lesson №9" largeTitleDisplayMode="always" id="xem-WY-3by"/>
                     <connections>
-                        <segue destination="hx6-Cq-Zaw" kind="show" identifier="ExampleOne" id="Lsq-OG-Inm"/>
+                        <segue destination="hx6-Cq-Zaw" kind="show" identifier="RickAndMorty" id="Lsq-OG-Inm"/>
                         <segue destination="vLg-RM-2in" kind="show" identifier="ShowImage" id="7zO-OQ-M8l"/>
                         <segue destination="hx6-Cq-Zaw" kind="show" identifier="ExampleTwo" id="6I9-T0-aQK"/>
                     </connections>
@@ -106,22 +106,68 @@
             </objects>
             <point key="canvasLocation" x="1808.6956521739132" y="-126.5625"/>
         </scene>
-        <!--Movies Review Controller-->
+        <!--Rick And Morty Controller-->
         <scene sceneID="Kk7-Ke-NSQ">
             <objects>
-                <tableViewController id="hx6-Cq-Zaw" customClass="MoviesReviewController" customModule="PresentationAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hx6-Cq-Zaw" customClass="RickAndMortyController" customModule="PresentationAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M5G-g3-L6v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieReviewCell" id="Jxa-3f-RZ8">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="216" id="Jxa-3f-RZ8" userLabel="RickAndMortyCharacterCell" customClass="RickAndMortyCharacterCell" customModule="PresentationAPI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jxa-3f-RZ8" id="Cdg-Sx-O4H" customClass="MovieReviewCell">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jxa-3f-RZ8" id="Cdg-Sx-O4H" customClass="rickAndMortyCharacterCell">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maL-po-2bd">
+                                            <rect key="frame" x="5" y="4" width="180" height="208"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="Nfl-hO-JCI"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-JX-PTE">
+                                            <rect key="frame" x="188" y="12" width="198" height="193"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL0-eu-oJM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="58.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2R-wd-XOk">
+                                                    <rect key="frame" x="0.0" y="67.5" width="198" height="58"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="species" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USC-cy-thm">
+                                                    <rect key="frame" x="0.0" y="134.5" width="198" height="58.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3QR-JX-PTE" firstAttribute="top" secondItem="Cdg-Sx-O4H" secondAttribute="topMargin" constant="1" id="3IL-8F-Bet"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3QR-JX-PTE" secondAttribute="trailing" constant="8" id="NSL-gv-YmK"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3QR-JX-PTE" secondAttribute="bottom" id="cyC-lC-UHz"/>
+                                        <constraint firstItem="maL-po-2bd" firstAttribute="leading" secondItem="Cdg-Sx-O4H" secondAttribute="leading" constant="5" id="hPz-yv-zrp"/>
+                                        <constraint firstItem="maL-po-2bd" firstAttribute="top" secondItem="Cdg-Sx-O4H" secondAttribute="top" constant="4" id="iiZ-E0-2PC"/>
+                                        <constraint firstItem="3QR-JX-PTE" firstAttribute="leading" secondItem="maL-po-2bd" secondAttribute="trailing" constant="3" id="mej-Ix-VPe"/>
+                                        <constraint firstAttribute="bottom" secondItem="maL-po-2bd" secondAttribute="bottom" constant="4" id="xYr-z2-u1e"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="characterImage" destination="maL-po-2bd" id="fMc-KT-xGE"/>
+                                    <outlet property="nameCharacterLabel" destination="oL0-eu-oJM" id="12W-o3-iTd"/>
+                                    <outlet property="speciesCharacterLabel" destination="USC-cy-thm" id="mQh-gG-Mfr"/>
+                                    <outlet property="statusCharacterLabel" destination="d2R-wd-XOk" id="O3V-AA-sLw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -155,6 +201,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6I9-T0-aQK"/>
+        <segue reference="Lsq-OG-Inm"/>
     </inferredMetricsTieBreakers>
 </document>

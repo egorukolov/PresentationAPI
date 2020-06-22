@@ -12,12 +12,12 @@
 		56C06F5F249DBB9F00C78EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C06F5D249DBB9F00C78EC3 /* Main.storyboard */; };
 		56C06F61249DBBA100C78EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C06F60249DBBA100C78EC3 /* Assets.xcassets */; };
 		56C06F64249DBBA100C78EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C06F62249DBBA100C78EC3 /* LaunchScreen.storyboard */; };
-		56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */; };
+		56C06F73249DBDFB00C78EC3 /* ImagesAndCharactersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F72249DBDFB00C78EC3 /* ImagesAndCharactersController.swift */; };
 		56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F74249DC2B800C78EC3 /* UserActionCell.swift */; };
 		56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F76249E0C8500C78EC3 /* ImageViewController.swift */; };
-		56C06F79249E2EC600C78EC3 /* MoviesReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F78249E2EC600C78EC3 /* MoviesReview.swift */; };
-		56C06F7B249E323100C78EC3 /* MoviesReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */; };
-		56C06F7D249E3D6500C78EC3 /* MovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */; };
+		56C06F79249E2EC600C78EC3 /* RickAndMortyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F78249E2EC600C78EC3 /* RickAndMortyCharacter.swift */; };
+		56C06F7B249E323100C78EC3 /* RickAndMortyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7A249E323100C78EC3 /* RickAndMortyController.swift */; };
+		56C06F7D249E3D6500C78EC3 /* RickAndMortyCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C06F7C249E3D6500C78EC3 /* RickAndMortyCharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,12 @@
 		56C06F60249DBBA100C78EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56C06F63249DBBA100C78EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56C06F65249DBBA100C78EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApisCollectionViewController.swift; sourceTree = "<group>"; };
+		56C06F72249DBDFB00C78EC3 /* ImagesAndCharactersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesAndCharactersController.swift; sourceTree = "<group>"; };
 		56C06F74249DC2B800C78EC3 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		56C06F76249E0C8500C78EC3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		56C06F78249E2EC600C78EC3 /* MoviesReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesReview.swift; sourceTree = "<group>"; };
-		56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesReviewController.swift; sourceTree = "<group>"; };
-		56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewCell.swift; sourceTree = "<group>"; };
+		56C06F78249E2EC600C78EC3 /* RickAndMortyCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCharacter.swift; sourceTree = "<group>"; };
+		56C06F7A249E323100C78EC3 /* RickAndMortyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyController.swift; sourceTree = "<group>"; };
+		56C06F7C249E3D6500C78EC3 /* RickAndMortyCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +88,11 @@
 		56C06F6D249DBBE300C78EC3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				56C06F72249DBDFB00C78EC3 /* ApisCollectionViewController.swift */,
 				56C06F74249DC2B800C78EC3 /* UserActionCell.swift */,
+				56C06F72249DBDFB00C78EC3 /* ImagesAndCharactersController.swift */,
 				56C06F76249E0C8500C78EC3 /* ImageViewController.swift */,
-				56C06F7A249E323100C78EC3 /* MoviesReviewController.swift */,
-				56C06F7C249E3D6500C78EC3 /* MovieReviewCell.swift */,
+				56C06F7A249E323100C78EC3 /* RickAndMortyController.swift */,
+				56C06F7C249E3D6500C78EC3 /* RickAndMortyCharacterCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 		56C06F70249DBC2F00C78EC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				56C06F78249E2EC600C78EC3 /* MoviesReview.swift */,
+				56C06F78249E2EC600C78EC3 /* RickAndMortyCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,11 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C06F75249DC2B800C78EC3 /* UserActionCell.swift in Sources */,
-				56C06F73249DBDFB00C78EC3 /* ApisCollectionViewController.swift in Sources */,
-				56C06F7D249E3D6500C78EC3 /* MovieReviewCell.swift in Sources */,
-				56C06F79249E2EC600C78EC3 /* MoviesReview.swift in Sources */,
+				56C06F73249DBDFB00C78EC3 /* ImagesAndCharactersController.swift in Sources */,
+				56C06F7D249E3D6500C78EC3 /* RickAndMortyCharacterCell.swift in Sources */,
+				56C06F79249E2EC600C78EC3 /* RickAndMortyCharacter.swift in Sources */,
 				56C06F77249E0C8500C78EC3 /* ImageViewController.swift in Sources */,
-				56C06F7B249E323100C78EC3 /* MoviesReviewController.swift in Sources */,
+				56C06F7B249E323100C78EC3 /* RickAndMortyController.swift in Sources */,
 				56C06F58249DBB9F00C78EC3 /* AppDelegate.swift in Sources */,
 				56C06F5A249DBB9F00C78EC3 /* SceneDelegate.swift in Sources */,
 			);
